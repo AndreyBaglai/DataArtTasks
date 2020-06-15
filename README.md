@@ -25,6 +25,7 @@
 Light variant: to simplify task, you can use jQuery. If you don't now how to work with xhr requests in JavaScript, instead of loading countries from API, you can create global array with countries in the file and work with it.
 
 2. There is an array of users:
+```
   const users = [{
     id: 'as23'
     nick: 'Octopus',
@@ -40,7 +41,7 @@ Light variant: to simplify task, you can use jQuery. If you don't now how to wor
     nick: 'Wally',
     firstName: 'Liza',
     LastName: 'Corty'}]
-
+```
    Property 'id' of all array elements is always unique (id: 'as23'). Transform this array into an object where object's property key is this id, and value is the array item itself.
 
    { 'as23' : {}}

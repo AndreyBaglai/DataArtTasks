@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task 2</title>
+    </head>
+    <body>
+        <h1 style="width: 100%; display: flex; height: 100vh; margin: 0; justify-content: center; align-items: center;">
+            Solution in tag script. Answer in console.
+        </h1>
+        <script>
+            const users = [
+                {
+                    id: 'as23',
+                    nick: 'Octopus',
+                    firstName: 'John',
+                    LastName: 'Dou',
+                },
+                {
+                    id: 'as25',
+                    nick: 'Star',
+                    firstName: 'Andy',
+                    LastName: 'Lee',
+                },
+                {
+                    id: 'as77',
+                    nick: 'Wally',
+                    firstName: 'Liza',
+                    LastName: 'Corty',
+                },
+            ];
+
+            const modifyUsers = (users) => {
+                return users.reduce((pre, next) => {
+                    const { id, ...bodyUser } = next;
+                    pre[id] = bodyUser;
+                    return pre;
+                }, {});
+            };
+
+            modifyUsers(users);
+            console.log(modifyUsers(users));
+        </script>
+    </body>
+</html>

@@ -33,14 +33,14 @@
 
             const modifyUsers = (users) => {
                 return users.reduce((pre, next) => {
-                    const { id, ...bodyUser } = next;
-                    pre[id] = bodyUser;
+                    const { id } = next;
+                    pre[id] = next;
                     return pre;
                 }, {});
             };
 
-            modifyUsers(users);
-            console.log(modifyUsers(users));
+            console.log('users', users);
+            console.log('modifyUsers', modifyUsers(users));
         </script>
     </body>
 </html>

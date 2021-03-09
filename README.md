@@ -24,6 +24,8 @@
 
 Light variant: to simplify task, you can use jQuery. If you don't now how to work with xhr requests in JavaScript, instead of loading countries from API, you can create global array with countries in the file and work with it.
 
+### Task2
+
 2. There is an array of users:
 ```
   const users = [{
